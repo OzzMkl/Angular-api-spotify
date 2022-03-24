@@ -8,12 +8,14 @@ import { AboutComponent } from './components/about/about.component';
 import { FormsModule } from '@angular/forms';
 import { SpotifyService } from 'src/app/services/spotify.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ArtistComponent } from './components/artist/artist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,

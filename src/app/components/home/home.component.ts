@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
     this._spotifyService.getAllArtist(this.search).subscribe(
       response => {
         //asignamos la respuesta recibida a nuestra variable
-        this.artists = response.artists
+        this.artists = response.artists.items;
         //console.log(response)
       },error =>{
         //si se genera error lo mostramos por consola
