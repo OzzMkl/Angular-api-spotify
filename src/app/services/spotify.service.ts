@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class SpotifyService {
 
   //autorizacion generada por spotify
-  private authorizationKey ='Bearer BQAhOA0DEVFXBohjNRBPrtP3KXTAFxKu0H5jSvcZRRkj_8S_oRfUgrgtyuihDQngdmsEIXBHcWhzIzwBHS8CRhQDn_quFyPAlJ-OM7t0kzYSbaDkIsjulGYBTui8RHbpOJ6K6hbDDb5gbVcejYkXjGSDrHq8xIoTAGQ';
+  private authorizationKey ='Bearer BQDxwwciCk9kHKf9tZiAw4zxLVLU8SvWzBXEh7UhQcJDgzFep594Wye7RDiSK2jpdmtquvL15crw1CcePPPfYpauvk10wDiAS4T1R4vOJjqF83QeRbcqfbqtcEFVOZNgyPoaIYAOtveIZeT5eSci-LOUs25R_OeVVwg';
   //creamos cabeceras
   private httpOptions = {
     headers : new HttpHeaders({
@@ -23,5 +23,14 @@ export class SpotifyService {
     let artistURL = `https://api.spotify.com/v1/search?q=${search}&type=artist`;
     //retornamos la respuesta
     return this._httpClient.get<any>(artistURL,this.httpOptions);
+  }
+  //obtener un solo artista
+  public getArtist(artistId:any):Observable<any>{
+    let artistIdURL='https://api.spotify.com/v1/artists/'+artistId;
+    return this._httpClient.get<any>(artistIdURL,this.httpOptions);
+  }
+  public getAllAlbums(artistId:any):Observable<any>{
+    let artistAlbumURL ='https://api.spotify.com/v1/artists/'+artistId+'/albums';
+    return this._httpClient.get<any>(artistAlbumURL,this.httpOptions);
   }
 }
