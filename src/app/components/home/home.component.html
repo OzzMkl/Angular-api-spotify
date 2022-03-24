@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Spotify music search</h2>
+    <p>Song search with spotify api</p>
+    <form class="form-group">
+        <input [(ngModel)]="search" (keyup)="searchArtist()" class="form-control" type="search" name="search" placeholder="Search artist ...">
+        <pre>{{artists | json}}</pre>
+    </form>
+    <br>
+    <div class="card text-white bg-secondary">
+        <div class="card-header ">
+            <h4>titulo card</h4>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+</div>
