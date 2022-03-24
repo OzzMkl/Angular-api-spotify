@@ -9,13 +9,15 @@ import { FormsModule } from '@angular/forms';
 import { SpotifyService } from 'src/app/services/spotify.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ArtistComponent } from './components/artist/artist.component';
+import { AlbumComponent } from './components/album/album.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ArtistComponent
+    ArtistComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,
