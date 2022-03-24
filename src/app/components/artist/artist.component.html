@@ -6,7 +6,7 @@
                     <div class="card-header bg-dark text-white">
                         <div class="row align-items-center">
                             <div class="col-md-3">
-                                <img [src]="artist.images[0].url" class="img-fluid img-thumbnail" alt="">
+                                <img [src]="artist.images | noimage" class="img-fluid img-thumbnail" alt="">
                             </div>
                             <div class="col-md-9">
                                 <h3 class="display-3 text-primary">{{artist.name}}</h3>
@@ -23,7 +23,7 @@
                             <div class="col-md-3" *ngFor="let album of albums">
                                 <div class="card mt-3">
                                     <div class="card-body bg-secondary text-white text-center">
-                                        <img [src]="album.images[0].url" class="img-fluid img-thumbnail" alt="">
+                                        <img [src]="album.images | noimage" class="img-fluid img-thumbnail" alt="">
                                         <p>{{album.name}}</p> 
                                         <a routerLink="/album/{{album.id}}" class="btn btn-outline-dark text-white">VER ALBUM</a>
                                     </div>

@@ -25,7 +25,7 @@ export class AlbumComponent implements OnInit {
     });
     //get detalles del album
     this._spotifyService.getAlbum(this.albumId).subscribe( response =>{
-      this.album = response
+      this.album = response;
       //console.log(this.album);
     },error =>{
       console.log(error);

@@ -10,6 +10,8 @@ import { SpotifyService } from 'src/app/services/spotify.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ArtistComponent } from './components/artist/artist.component';
 import { AlbumComponent } from './components/album/album.component';
+//pipe
+import { NoimagePipe } from './pipes/noimage.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { AlbumComponent } from './components/album/album.component';
     HomeComponent,
     AboutComponent,
     ArtistComponent,
-    AlbumComponent
+    AlbumComponent,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,

@@ -6,7 +6,7 @@
                     <div class="card-header bg-dark text-white">
                         <div class="row align-items-center">
                             <div class="col-md-2">
-                                <img [src]="album.images[0].url" class="img-fluid img-thumbnail" alt="">
+                                <img [src]="album.images | noimage" class="img-fluid img-thumbnail" alt="">
                             </div>
                             <div class="col-md-10">
                                 <h4 class="display-4">{{album.name}}</h4>
@@ -24,7 +24,7 @@
                                     </div>
                                     <div class="card-body bg-secondary text-white text-center">
                                         <!-- <p>{{track.disc_number}}</p> -->
-                                        <p>{{track.duration_ms / 60000}}</p>
+                                        <!-- <p>{{track.duration_ms / 60000}}</p> -->
                                         <!-- <p>{{track.explicit}}</p> -->
 
                                         <label for="">Preview</label>

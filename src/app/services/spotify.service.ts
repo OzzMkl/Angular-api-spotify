@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class SpotifyService {
 
   //autorizacion generada por spotify
-  private authorizationKey ='Bearer BQC-4RnPWlTxxXm0JikcP0dWhN6pL3LwvsLd8K0SxkS2t8-1hj3YKUYLLNl5xz97PBth0h1MScYQavYyTCqyz4XGnZUqajHRtCaI57pc6qc0GGbbl933amfg4GTv3h4rQltpzvBszvnPMmYdJkoqe_lggBM_QwMgf6g';
+  private authorizationKey ='Bearer BQAlwsB4UezwztGmb17tEps418cAGL1sV_-x8i6z5a7yltGvw2oJB7YSXXCuM3552IAbUh8f0A5Qz8x-MIrryf-aZKAyq1GAsceWfsJecytZNTdMqXGTcgbjyF9t2f6p_blvRc6kW9I2usJWEFK_an0fF91BZKZY8B8';
   //creamos cabeceras
   private httpOptions = {
     headers : new HttpHeaders({
