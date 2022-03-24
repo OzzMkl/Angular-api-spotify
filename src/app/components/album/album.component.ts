@@ -34,7 +34,7 @@ export class AlbumComponent implements OnInit {
     this._spotifyService.getAllTracks(this.albumId).subscribe(
       response =>{
         this.tracks = response.items;
-        console.log(this.tracks)
+        //console.log(this.tracks)
     },error =>{
       console.log(error);
     });
