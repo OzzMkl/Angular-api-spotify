@@ -1,3 +1,9 @@
+# Antes de comenzar
+1.- Ir a https://developer.spotify.com/console/ y generar Token
+2.- Dentro del proyecto en src/app/services/spotify.service.ts en la variable authorizationKey pegar el token generado en el paso anterior
+3.- Abrir una consola y situarse en la carpeta del proyecto ejecutar npm install.
+4.- Por ultimo ng s --o para ejecutarlo en un servidor local.
+ 
 # PruebaOmnidoc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
